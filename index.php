@@ -3,7 +3,7 @@
 function validateId(string $patientId) {
     if (!preg_match('/^\d+$/', $patientId)
         || strlen($patientId) !== 10) {
-        return 'Patient ID must contain 10 numbers (no integers, no letters).';
+        return 'Patient ID must contain 10 positive whole numbers.';
     } elseif (strlen($patientId) !== 10) {
         return 'Field must have exactly 10 numbers.';
     } elseif ($patientId === '1111111111'
