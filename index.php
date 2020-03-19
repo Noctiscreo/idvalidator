@@ -1,6 +1,6 @@
 <?php
 
-function validateId($patientId) {
+function validateId(string $patientId) {
     if (!preg_match('/^\d+$/', $patientId)
         || strlen($patientId) !== 10) {
         return 'Patient ID must contain 10 numbers (no integers, no letters).';
