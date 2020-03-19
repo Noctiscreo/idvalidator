@@ -22,4 +22,4 @@ function validateId(string $patientId) {
     }
 }
 
-echo validateId(1111111111);
+echo validateId('1111111111');
